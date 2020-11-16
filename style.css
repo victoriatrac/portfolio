@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+/* main selectors */
+
+* {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+h1 {
+	font-size: 10vw;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	line-height: 1.5em;
+}
+
+h3 {
+	font-size: .9rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+h4 {
+	font-size: .8rem;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.7rem;
+}
+
+button {
+	font-size: 1rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* container selectors */
+
+#container {
+	font-size: 1.3rem;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+#headerContainer {
+	width: 90%;
+	height: auto;
+	margin: 5% auto 0% auto;
+	/* order: 1; */
+}
+
+#mainContainer {
+	width: 90%;
+	margin: 0% auto;
+	display: block;
+	/* order: 2; */
+}
+
+#sidebarContainer {
+	font-size: 1.2rem;
+	margin: 1rem 0% 1rem 0%;
+}
+
+#contentContainer {
+	width: 100%;
+	margin: 0% auto;
+}
+
+#footerContainer {
+	font-size: 1.1rem;
+	text-align: center;
+	background-color: orange;
+	padding: 2rem 0%;
+	margin-top: 2rem;
+}
+
+/* header and sidebar item selectors */
+
+header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#name {
+	width: 75%;
+	text-align: left;
+	padding-left: 3%;
+	color: black;
+}
+
+#logo {
+	width: 12%;
+	height: auto;
+	min-width: 50px;
+}
+
+#logo img {
+	width: 100%;
+	height: auto;
+	max-width: 100px;
+}
+
+#portraitDiv {
+	width: 100%;
+	text-align: center;
+}
+
+#portrait {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+
+#navDiv {
+	display: none;
+}
+
+#navDiv nav {
+	padding-left: 1rem;
+}
+
+/* responsivity */
+
+@media screen and (min-width: 769px) {
+
+	/* main selectors */
+	
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+		line-height: 1.4em;
+	}
+
+	h3 {
+		margin-bottom: 1.5rem;
+	}
+
+	h4 {
+		margin-bottom: .5rem;
+	}
+
+	/* container selectors */
+
+	#headerContainer {
+		width: 95%;
+		height: auto;
+		margin: 5% auto 3%;
+	}
+
+	#mainContainer {
+		display: flex;
+		flex-flow: row-reverse wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	#sidebarContainer {
+		width: 25%;
+		padding-left: 5%;
+		margin: 0%;
+	}
+
+	#contentContainer {
+		width: 70%;
+		margin: 0%;
+	}
+
+	/* header and sidebar item selectors */
+
+	header {
+		justify-content: flex-start;
+	}
+
+	#logo img {
+		max-width: 4rem;
+	}
+
+	#portraitDiv {
+		width: 100%;
+	}
+
+	#portrait {
+		width: 10em;
+		height: 10em;
+	}
+
+	#navDiv {
+		margin-top: 2rem;
+		display: block;
+		width: 100%;
+	}
+}
+
+/* breakpoints
+	320 - 480 mobile
+	481 - 768 tablets
+	769 - 1024 small screens/laptops
+	1025 - 1200 desktops/large screens
+	1201 + xl screens/tvs
+*/

@@ -127,21 +127,21 @@ button {
 #bioContainer {
 	width: 100%;
 	margin: 2rem auto 0% auto;
-	order: 3;
+	order: 4;
 }
 
 #portraitDiv {
 	width: 100%;
 	text-align: center;
 	margin-top: 1rem;
-	order: 2;
+	order: 3;
 }
 
 #navDiv {
 	margin-top: 1rem;
 	font-size: 1.2rem;
 	margin-top: 2rem;
-	order: 4;
+	order: 2;
 }
 
 #footerContainer {
@@ -150,6 +150,7 @@ button {
 	background-color: orange;
 	padding: 2rem 0%;
 	margin-top: 2rem;
+	width: 100%;
 }
 
 /* header and sidebar item selectors */
@@ -181,13 +182,12 @@ header {
 }
 
 #portrait {
-	width: 8rem;
-	height: 8rem;
+	width: 10rem;
+	height: 10rem;
 	border-radius: 50%;
 }
 
 #navDiv nav {
-	padding-left: 1rem;
 	line-height: 1.5rem;
 	font-size: 1rem;
 }
@@ -230,18 +230,16 @@ header {
 
 	#headerContainer {
 		margin: 5% auto 3%;
+		max-width: 1400px;
 	}
 
 	#mainContainer {
-		/* flex-flow: row wrap;
-		justify-content: space-between;
-		align-items: flex-start; */
-		/* display: block; */
 		display: none;
 	}
 	
 	#pcMainContainer {
 		width: 90%;
+		max-width: 1400px;
 		margin: 0% auto;
 		display: flex;
 		flex-flow: row-reverse wrap;
@@ -255,9 +253,23 @@ header {
 		margin: 0%;
 	}
 
+	#portraitDiv {
+		width: 100%;
+	}
+
+	#navDiv {
+		margin-top: 2rem;
+		display: block;
+		width: 100%;
+	}
+
 	#contentContainer {
 		width: 70%;
 		margin: 0%;
+	}
+
+	#footerContainer {
+		/* delete if unused */
 	}
 
 	/* header and sidebar item selectors */
@@ -266,23 +278,27 @@ header {
 		justify-content: flex-start;
 	}
 
+	#logo {
+		width: 5%;
+	}
+
 	#logo img {
 		max-width: 4rem;
 	}
 
-	#portraitDiv {
-		width: 100%;
+	#name {
+		width: 70%;
+		text-align: left;
+		color: black;
 	}
 
 	#portrait {
 		width: 10em;
 		height: 10em;
 	}
-
-	#navDiv {
-		margin-top: 2rem;
-		display: block;
-		width: 100%;
+	
+	#navDiv nav {
+		padding-left: 1rem;
 	}
 }
 

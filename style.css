@@ -66,7 +66,7 @@ h1 {
 
 h2 {
 	font-size: 1.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 	line-height: 1.5em;
 }
 
@@ -80,6 +80,7 @@ h3 {
 h4 {
 	font-size: .8rem;
 	text-transform: uppercase;
+	margin-bottom: .5rem;
 	font-weight: 800;
 }
 
@@ -98,32 +99,49 @@ button {
 #container {
 	font-size: 1.3rem;
 	width: 100%;
-	display: flex;
-	flex-flow: column;
 }
 
 #headerContainer {
 	width: 90%;
 	height: auto;
-	margin: 5% auto 0% auto;
-	/* order: 1; */
+	margin: 5% auto 5% auto;
 }
 
 #mainContainer {
 	width: 90%;
 	margin: 0% auto;
-	display: block;
-	/* order: 2; */
+	display: flex;
+	flex-flow: column;
 }
 
-#sidebarContainer {
-	font-size: 1.2rem;
-	margin: 1rem 0% 1rem 0%;
+#pcMainContainer {
+	display: none;
 }
 
-#contentContainer {
+#quickBioContainer {
 	width: 100%;
 	margin: 0% auto;
+	order: 1;
+}
+
+#bioContainer {
+	width: 100%;
+	margin: 2rem auto 0% auto;
+	order: 3;
+}
+
+#portraitDiv {
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+	order: 2;
+}
+
+#navDiv {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+	order: 4;
 }
 
 #footerContainer {
@@ -162,23 +180,26 @@ header {
 	max-width: 100px;
 }
 
-#portraitDiv {
-	width: 100%;
-	text-align: center;
-}
-
 #portrait {
 	width: 8rem;
 	height: 8rem;
 	border-radius: 50%;
 }
 
-#navDiv {
-	display: none;
-}
-
 #navDiv nav {
 	padding-left: 1rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+
+/* other selectors */
+
+#buttons {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	padding: .25rem;
+	margin-top: .75rem;
 }
 
 /* responsivity */
@@ -208,12 +229,20 @@ header {
 	/* container selectors */
 
 	#headerContainer {
-		width: 95%;
-		height: auto;
 		margin: 5% auto 3%;
 	}
 
 	#mainContainer {
+		/* flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start; */
+		/* display: block; */
+		display: none;
+	}
+	
+	#pcMainContainer {
+		width: 90%;
+		margin: 0% auto;
 		display: flex;
 		flex-flow: row-reverse wrap;
 		justify-content: space-between;

@@ -147,9 +147,9 @@ button {
 #footerContainer {
 	font-size: 1.1rem;
 	text-align: center;
-	background-color: orange;
-	padding: 2rem 0%;
-	margin-top: 2rem;
+	background-image: url('img/footer_bg.jpg');
+	padding: 4rem 0%;
+	margin-top: 4rem;
 	width: 100%;
 }
 
@@ -188,15 +188,32 @@ header {
 }
 
 #navDiv nav {
-	line-height: 1.5rem;
+	line-height: 2rem;
 	font-size: 1rem;
+}
+
+/* footer selectors */
+
+footer {
+	width: 60%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, .82);;
+	padding: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
 /* other selectors */
 
+#buttonSpan {
+	margin-top: 2rem;
+	display: block;
+}
+
 #buttons {
-	background-color: white;
-	color: black;
+	background-color: black;
+	color: white;
 	border: 1px solid black;
 	padding: .25rem;
 	margin-top: .75rem;
@@ -268,10 +285,6 @@ header {
 		margin: 0%;
 	}
 
-	#footerContainer {
-		/* delete if unused */
-	}
-
 	/* header and sidebar item selectors */
 
 	header {
@@ -299,6 +312,12 @@ header {
 	
 	#navDiv nav {
 		padding-left: 1rem;
+	}
+
+	/* footer selectors */
+
+	footer {
+		max-width: 20rem;
 	}
 }
 

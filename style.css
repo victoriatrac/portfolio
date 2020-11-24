@@ -91,11 +91,6 @@ p {
 
 a {
 	color: magenta;
-	font-weight: bold;
-}
-
-a:hover {
-	font-style: italic;
 }
 
 button {
@@ -204,6 +199,10 @@ header {
 	color: black;
 	line-height: 2rem;
 	font-weight: normal;
+}
+
+.navLink:hover {
+	font-style: italic;
 }
 
 /* footer selectors */

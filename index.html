@@ -6,6 +6,7 @@
         <!-- adding the font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet"> 
 
         <!-- stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -35,7 +36,9 @@
 
                     <!-- logo -->
                     <div id="logo">
-                        <img src="img/logo.png" alt="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo" onmouseover="this.src='img/logo_glitch.png'" onmouseout="this.src='img/logo.png'">
+                        </a>
                     </div>
                 
                     <!-- name, h1 -->
@@ -56,7 +59,7 @@
                 <!-- portrait div -->
                 <div id="portraitDiv">
 
-                    <img src="img/portrait.jpg" id="portrait" alt="portrait">
+                    <img src="img/portrait.jpg" id="portrait" alt="portrait" onmouseover="this.src='img/portrait_glitch.jpg'" onmouseout="this.src='img/portrait.jpg'">
 
                 </div>
                 
@@ -67,9 +70,9 @@
 
                     <!-- project navigation -->
                     <nav>
-                        <a href="Category1.html">Category 1</a><br />
-                        <a href="Category2.html">Category 2</a><br />
-                        <a href="Category3.html">Category 3</a><br />
+                        <a class="navLink" href="Category1.html">Category 1</a><br />
+                        <a class="navLink" href="Category2.html">Category 2</a><br />
+                        <a class="navLink" href="Category3.html">Category 3</a><br />
                     </nav>
 
                 </div>
@@ -81,7 +84,7 @@
                 <div id="quickBioContainer">
 
                     <!-- h2 quick bio -->
-                    <h2>Digital Designer working out of Denver, CO. Focusing on interactive design in 2D and 3D formats.</h2>
+                    <h2>Digital Designer and budding Developer out of Denver, CO. Focusing on interactive design in 2D and 3D formats.</h2>
                 </div>
 
                 <div id="bioContainer">
@@ -93,7 +96,7 @@
                     </p>
                     <br />
                     <p>
-                        I'm looking for a full-time career as an interactive developer. I'm also open to 3D design opportunities, particularly with modeling, lighting, and technical art. Currently, I'm freelancing while enrolled in Lambda School's full-stack web development program in order to further hone my programming skills. Prior to this, I worked as an interior designer, with over 200 spaces created in just over a year. 
+                        I'm looking for a full-time career as a developer, preferably involving interaction. I'm also open to 3D design opportunities, particularly related to modeling, lighting, and technical art. Currently, I'm freelancing while enrolled in Lambda School's full-stack web development program in order to further hone my programming skills. Prior to this, I worked as an interior designer, with over 200 spaces created in just over a year.
                     </p>
                     <br />
                     <p>
@@ -102,7 +105,7 @@
 
                     <span id="buttonSpan">
 
-                        <button id="buttons">Download my resume (PDF)</button>
+                        <button id="buttons" onclick="location.href='doc/VictoriaTrac_Resume.pdf'">Resume (PDF)</button>
 
                         <button id="buttons">Contact Me</button>
 
@@ -123,7 +126,7 @@
                     <!-- portrait div -->
                     <div id="portraitDiv">
 
-                        <img src="img/portrait.jpg" id="portrait" alt="portrait">
+                        <img src="img/portrait.jpg" id="portrait" alt="portrait" onmouseover="this.src='img/portrait_glitch.jpg'" onmouseout="this.src='img/portrait.jpg'">
 
                     </div>
                     
@@ -134,9 +137,9 @@
 
                         <!-- project navigation -->
                         <nav>
-                            <a href="Category1.html">Category 1</a><br />
-                            <a href="Category2.html">Category 2</a><br />
-                            <a href="Category3.html">Category 3</a><br />
+                            <a class="navLink" href="Category1.html">Category 1</a><br />
+                            <a class="navLink" href="Category2.html">Category 2</a><br />
+                            <a class="navLink" href="Category3.html">Category 3</a><br />
                         </nav>
 
                     </div>
@@ -148,17 +151,21 @@
                 <div id="contentContainer">
 
                     <!-- h2 quick bio -->
-                    <h2>Digital Designer working out of Denver, CO. Focusing on interactive design in 2D and 3D formats.</h2>
+                    <h2>Digital Designer and budding Developer working out of Denver, CO. Focusing on interactive design in 2D and 3D formats.</h2>
 
                     <!-- bio -->
                     <h3>Biography</h3>
                     
                     <p>
-                        Hi! I'm Victoria Trac, a technically-brained digital designer with a knack for creative problem solving. I have an insatiable desire to learn and over the last decade+ have found myself working on a variety of projects within the design spectrum. My intention is to create things that matter -- whether they evoke emotion or enhance experiences. I'm passionate about programming, creating tools that add efficiency, and designing immersive experiences.
+                        Hi! I'm Victoria Trac, a technically-brained multi-disciplinary creator with a knack for creative problem solving. I have an insatiable desire to learn and over the last decade+ have found myself working on a variety of projects within the design spectrum. My intention is to create things that matter -- whether they evoke emotion or enhance experiences. I'm passionate about programming, creating tools that add efficiency, and designing immersive experiences.
                     </p>
                     <br />
                     <p>
-                        I'm looking for a full-time career as an interactive developer. I'm also open to 3D design opportunities, particularly with modeling, lighting, and technical art. Currently, I'm freelancing while enrolled in Lambda School's full-stack web development program in order to further hone my programming skills. Prior to this, I worked as an interior designer, with over 200 spaces created in just over a year. 
+                        I'm looking for a full-time career as a developer. I'm also open to 3D design opportunities, particularly related to modeling, lighting, and technical art. Currently, I'm freelancing while enrolled in Lambda School's full-stack web development program in order to further hone my programming skills. Prior to this, I worked as an interior designer, with over 200 spaces created in just over a year.
+                    </p>
+                    <br />
+                    <p>
+                        During my free time, I can be found cooking, spending time outdoors, and painting.
                     </p>
                     <br />
                     <p>
@@ -167,7 +174,7 @@
 
                     <span id="buttonSpan">
 
-                        <button id="buttons">Download my resume (PDF)</button>
+                        <button id="buttons" onclick="location.href='doc/VictoriaTrac_Resume.pdf'">Resume (PDF)</button>
 
                         <button id="buttons">Contact Me</button>
 
@@ -184,19 +191,29 @@
     
                 <footer>
         
+    <div id="footerLeft">
                     <!-- footer navigation -->
                     <nav>
-    
-                        <a href="index.html">home</a>
-                        <a href="projects.html">projects</a>
-                        <a href="contact.html">contact</a>
-                        <a href="resume.pdf">download resume</a>
-                        <a href="#">linkedin</a>
-                        <a href="#">github</a>
-                        <a href="#">codepen</a>
-                        <a href="#">vimeo</a>
-    
+
+                        <a class="navLink" href="index.html">home</a>
+                        <br />
+                        <a class="navLink" href="projects.html">projects</a>
+                        <br />
+                        <a class="navLink" href="contact.html">contact</a>
+                        <br />
+                        <a class="navLink" href="doc/VictoriaTrac_Resume.pdf">resume</a>
+                    </nav></div>
+                    <div id="footerRight"><nav>
+                        <a class="navLink" href="#">linkedin</a>
+                        <br />
+                        <a class="navLink" href="#">github</a>
+                        <br />
+                        <a class="navLink" href="#">codepen</a>
+                        <br />
+                        <a class="navLink" href="#">vimeo</a>
+
                     </nav>
+                </div>
         
                 </footer>
 

@@ -89,6 +89,15 @@ p {
 	line-height: 1.7rem;
 }
 
+a {
+	color: magenta;
+	font-weight: bold;
+}
+
+a:hover {
+	font-style: italic;
+}
+
 button {
 	font-size: 1rem;
 	font-family: 'Raleway', sans-serif;
@@ -163,9 +172,8 @@ header {
 }
 
 #name {
-	width: 75%;
+	width: 80%;
 	text-align: left;
-	padding-left: 3%;
 	color: black;
 }
 
@@ -192,6 +200,12 @@ header {
 	font-size: 1rem;
 }
 
+.navLink {
+	color: black;
+	line-height: 2rem;
+	font-weight: normal;
+}
+
 /* footer selectors */
 
 footer {
@@ -200,8 +214,25 @@ footer {
 	background-color: rgba(255, 255, 255, .82);;
 	padding: 1rem;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+/* footer a {
+	color: black;
+	line-height: 2rem;
+}
+
+footer a:hover {
+	font-style: italic;
+} */
+
+#footerLeft {
+	width: 50%;
+}
+
+#footerRight {
+	width: 50%;
 }
 
 /* other selectors */
@@ -271,13 +302,13 @@ footer {
 	}
 
 	#portraitDiv {
-		width: 100%;
+		width: 65%;
 	}
 
 	#navDiv {
 		margin-top: 2rem;
 		display: block;
-		width: 100%;
+		width: 65%;
 	}
 
 	#contentContainer {
@@ -292,15 +323,15 @@ footer {
 	}
 
 	#logo {
-		width: 5%;
+		width: 15%;
 	}
 
 	#logo img {
-		max-width: 4rem;
+		max-width: 7rem;
 	}
 
 	#name {
-		width: 70%;
+		width: 80%;
 		text-align: left;
 		color: black;
 	}
@@ -317,7 +348,7 @@ footer {
 	/* footer selectors */
 
 	footer {
-		max-width: 20rem;
+		max-width: 80%;
 	}
 }
 

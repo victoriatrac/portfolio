@@ -18,3 +18,8 @@ To do list, last updated 11/23/2020:
 ### Changes 11/24/20
 * fixed flexbox for PCs
 * made some tweaks to text
+
+### Changes 11/25/20
+* made tweaks to flexbox
+* adjusted mobile layout
+* added URLs for bottom nav
